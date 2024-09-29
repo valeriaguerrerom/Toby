@@ -3,28 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clandestino - Contacto</title>
+    <title>Toby's Pet Care - Galería</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <div id="header"></div>
         <script>
-        // Cargar el contenido de header.html dentro del div con id="header"
-        fetch('header.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('header').innerHTML = data);
+            // Cargar el contenido de header.html dentro del div con id="header"
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
         </script>
-    </header> 
+    </header>
+
+    <!-- Sección de la galería -->
+    <section id="galeria">
+        <h2>Galería de Servicios</h2>
+        <div class="carousel2">
+            <!-- Primera imagen -->
+            <div class="slide2">
+                <img src="img/vet.jpg" alt="Servicio 1">
+                <div class="caption2">
+                    <h3>Servicio Veterinario</h3>
+                    <p>Cuidado médico especializado para tu mascota.</p>
+                </div>
+            </div>
+            <!-- Segunda imagen -->
+            <div class="slide2">
+                <img src="img/pel.webp" alt="Servicio 2">
+                <div class="caption2">
+                    <h3>Peluquería Canina</h3>
+                    <p>Estilismo y cuidado para tu mascota.</p>
+                </div>
+            </div>
+            <!-- Tercera imagen -->
+            <div class="slide2">
+                <img src="img/acc.webp" alt="Accesorios para mascotas">
+                <div class="caption2">
+                    <h3>Accesorios para Mascotas</h3>
+                    <p>Productos de calidad para consentir a tu amigo peludo.</p>
+                </div>
+            </div>
+            <!-- Cuarta imagen -->
+            <div class="slide2">
+                <img src="img/perrito.jpg" alt="Spa para mascotas">
+                <div class="caption2">
+                    <h3>Spa Relajante</h3>
+                    <p>Experiencia de lujo para tu mascota en nuestro spa.</p>
+                </div>
+            </div>
+            <!-- Quinta imagen -->
+            <div class="slide2">
+                <img src="img/ju.jpg" alt="Juguetes para mascotas">
+                <div class="caption2">
+                    <h3>Juguetes y Entretenimiento</h3>
+                    <p>Diversión asegurada para tu mascota.</p>
+                </div>
+            </div>
+            <!-- Sexta imagen -->
+            <div class="slide2">
+                <img src="img/nut.jpg" alt="Nutrición para mascotas">
+                <div class="caption2">
+                    <h3>Nutrición Balanceada</h3>
+                    <p>Alimentos nutritivos para la salud de tu mascota.</p>
+                </div>
+            </div>
+            <!-- Séptima imagen -->
+            <div class="slide2">
+                <img src="img/at.jpg" alt="Atención en Toby's">
+                <div class="caption2">
+                    <h3>Atención Personalizada</h3>
+                    <p>Nos adaptamos a las necesidades de cada mascota.</p>
+                </div>
+            </div>
+            <!-- Octava imagen -->
+            <div class="slide2">
+                <img src="img/aaaa.webp" alt="Accesorios únicos">
+                <div class="caption2">
+                    <h3>Accesorios Exclusivos</h3>
+                    <p>Los mejores accesorios para consentir a tu mascota.</p>
+                </div>
+            </div>
+            <!-- Novena imagen -->
+            <div class="slide2">
+                <img src="img/den.jpg" alt="Cuidado dental">
+                <div class="caption2">
+                    <h3>Cuidado Dental</h3>
+                    <p>Mantén la salud dental de tu mascota.</p>
+                </div>
+            </div>
+            <!-- Décima imagen -->
+            <div class="slide2">
+                <img src="img/paseo.webp" alt="Paseos para mascotas">
+                <div class="caption2">
+                    <h3>Paseos y Ejercicio</h3>
+                    <p>Garantiza una vida activa y saludable para tu mascota.</p>
+                </div>
+            </div>
+        </div>
+        <div class="controls2">
+            <button id="prev">Anterior</button>
+            <button id="next">Siguiente</button>
+        </div>
+    </section>
+
     
- <!-- Footer -->
- <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.body.insertAdjacentHTML('beforeend', data);
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer"></div>
+        <script>
+            // Cargar el contenido de footer.html dentro del div con id="footer"
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+        </script>
+    </footer>
+
+    <!-- Script para el carrusel -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          let slideIndex = 0;
+          const slides = document.querySelectorAll('.slide2'); // Selecciona las diapositivas
+          const prev = document.getElementById('prev');
+          const next = document.getElementById('next');
+
+          function showSlide(index) {
+              slides.forEach((slide, i) => {
+                  slide.style.display = 'none'; // Oculta todas las diapositivas
+              });
+              slides[index].style.display = 'block'; // Muestra la diapositiva actual
+          }
+
+          // Mostrar la siguiente diapositiva cada 3 segundos
+          const autoSlide = setInterval(() => {
+              slideIndex = (slideIndex + 1) % slides.length;
+              showSlide(slideIndex);
+          }, 3000);
+
+          // Navegación manual
+          prev.addEventListener('click', () => {
+              clearInterval(autoSlide); // Detiene el desplazamiento automático
+              slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
+              showSlide(slideIndex);
+          });
+
+          next.addEventListener('click', () => {
+              clearInterval(autoSlide); // Detiene el desplazamiento automático
+              slideIndex = (slideIndex + 1) % slides.length;
+              showSlide(slideIndex);
+          });
+
+          // Mostrar la primera diapositiva al cargar
+          showSlide(slideIndex);
       });
-  </script>
-  
+    </script>
+
 </body>
 </html>

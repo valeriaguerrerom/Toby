@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clandestino - Contacto</title>
+    <title>Toby's Pet Care - Sedes</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <div id="header"></div>
         <script>
@@ -15,16 +17,50 @@
         .then(response => response.text())
         .then(data => document.getElementById('header').innerHTML = data);
         </script>
-    </header> 
-    
- <!-- Footer -->
- <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.body.insertAdjacentHTML('beforeend', data);
-      });
-  </script>
+    </header>
+
+    <!-- Sección de Sedes -->
+    <section class="sede-container">
+        <!-- Primera Sede -->
+        <div class="sede">
+            <img src="img/sede1.jpg" alt="Sede 1">
+            <div class="sede-content">
+                <h2>Sede Principal - Pasto</h2>
+                <p>Calle 13 #32-55, Pasto, Nariño. Contamos con los mejores servicios de veterinaria y peluquería.</p>
+                <a href="https://www.google.com/maps/place/Cl.+13+%2332-55,+Pasto,+Nari%C3%B1o/@1.2169882,-77.2863301,17z/data=!3m1!4b1!4m6!3m5!1s0x8e2ed481d82c2981:0x28d6e32523f0e875!8m2!3d1.2169882!4d-77.2863301!16s%2Fg%2F11c20wpblr?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver en Google Maps</a>
+            </div>
+        </div>
+
+        <!-- Segunda Sede -->
+        <div class="sede">
+            <img src="img/sede2.jpg" alt="Sede 2">
+            <div class="sede-content">
+                <h2>Sede Norte - Pasto</h2>
+                <p>Avenida los Estudiantes, Cra. 37 #19B - 35, Pasto, Nariño. ¡Visítanos para obtener lo mejor en servicios premium para tu mascota!</p>
+                <a href="https://www.google.com/maps/place/Av.+de+los+Estudiantes,+Pasto,+Nari%C3%B1o/data=!4m2!3m1!1s0x8e2ed47c2d321eab:0xb5fb79a30511209e?sa=X&ved=1t:242&ictx=111" target="_blank">Ver en Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Mapa -->
+    <section class="map-container">
+        <h2>Nuestra Ubicación en Google Maps</h2>
+        <!-- Mapa incrustado de Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9183374253953!2d-77.2863301!3d1.2169881999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed481d82c2981%3A0x28d6e32523f0e875!2sCl.%2013%20%2332-55%2C%20Pasto%2C%20Nari%C3%B1o!5e0!3m2!1ses-419!2sco!4v1727591963955!5m2!1ses-419!2sco"></iframe> 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer"></div>
+        <script>
+        // Cargar el contenido de footer.html dentro del div con id="footer"
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+        </script>
+    </footer>
   
 </body>
 </html>
