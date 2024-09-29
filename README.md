@@ -55,7 +55,7 @@ The website includes:
 ## Technologies Used 💻
 
 - **HTML5**: For semantic markup.
-- **CSS3**: Custom styles with Nariño-inspired design, including galleries and interactive elements.
+- **CSS**: Custom styles with Nariño-inspired design, including galleries and interactive elements.
 - **JavaScript**: For dynamic functionalities such as the image carousel and interactivity.
 - **GitHub**: Version control for all changes.
 
