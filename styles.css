@@ -16,8 +16,11 @@ header {
     background-color: #64d16d; /* Fondo negro */
     color: #ffffff; /* Texto dorado */
     padding: 10px 20px;
-    position: relative;
-    z-index: 10; /* El encabezado estará siempre en la parte superior */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Para que ocupe todo el ancho de la página */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
 }
 
 nav ul {
@@ -123,6 +126,7 @@ nav ul li a {
     align-items: center;
     padding: 20px;
     z-index: 1;
+    margin-top: 80px;
 }
 
 .banner-content {
@@ -267,6 +271,7 @@ nav ul li a {
     background-image: url('img/fondo.png');
     background-size: cover;
     background-position: center;
+    margin-top: 80px;
 }
 
 #contacto::before {
@@ -399,6 +404,7 @@ form button:hover {
     padding: 50px;
     background-color: #f8f9fa;
     text-align: center;
+    margin-top: 80px;
 }
 
 #productos h2 {
@@ -475,6 +481,8 @@ form button:hover {
     background-size: cover;
     background-position: center;
     color: #fff;
+    min-height: 80vh;
+    margin-top: 80px;
 }
 
 #contacto::before {
@@ -507,8 +515,8 @@ form label {
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -526,6 +534,8 @@ form button:hover {
     background-color: #81e871;
 }
 
+
+
 /* Banner principal */
 #banner-sobre-nosotros {
     background-image: url('img/fondo.png'); /* Imagen de fondo */
@@ -535,6 +545,7 @@ form button:hover {
     padding: 150px 0;
     text-align: center;
     position: relative;
+    margin-top: 80px;
 }
 
 #banner-sobre-nosotros .banner-content {
@@ -552,12 +563,64 @@ form button:hover {
     font-size: 1.5rem;
 }
 
+/* Estilos para la sección 'Sobre Nosotros' */
+#sobre-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#sobre-nosotros div {
+    flex: 1 1 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#sobre-nosotros img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#sobre-nosotros h2 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+#sobre-nosotros p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Estilos para que las imágenes y textos sean responsivos */
+@media screen and (max-width: 768px) {
+    #sobre-nosotros {
+        flex-direction: column;
+    }
+
+    #sobre-nosotros div {
+        flex: 1 1 100%;
+    }
+}
+
+
 /* Misión y Visión */
 #mision-vision {
     display: flex;
     justify-content: space-around;
     padding: 50px;
     background-color: #f8f9fa;
+    margin-top: 80px;
 }
 
 #mision-vision div {
@@ -583,6 +646,54 @@ form button:hover {
     color: #555;
     line-height: 1.6;
 }
+
+/* Estilos para la sección de Valores */
+#valores {
+    padding: 50px 20px;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+#valores h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.valores-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.valor {
+    flex: 1 1 45%;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.valor h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #666666;
+}
+
+.valor p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .valores-grid {
+        flex-direction: column;
+    }
+}
+
 
 /* Sección del equipo */
 #equipo {
@@ -633,4 +744,6 @@ footer {
     position: relative;
     bottom: 0;
     z-index: 1;
+
+    
 }
