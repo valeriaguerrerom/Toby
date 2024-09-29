@@ -246,3 +246,14 @@
     <h4>Análisis del Resultado:</h4>
     <p>En esta consulta se identificaron 2 clientes de 20 años. Este grupo representa un segmento joven que puede ser influenciado mediante eventos como "happy hours" o descuentos en bebidas populares entre jóvenes como la cerveza o los cocteles. Además, estos clientes suelen preferir ambientes dinámicos y con música moderna, lo cual podría atraer a más jóvenes de su edad.</p>
 </div>
+ <!-- Footer -->
+ <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('beforeend', data);
+      });
+  </script>
+  
+</body>
+</html>
