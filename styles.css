@@ -134,7 +134,7 @@ nav ul li a {
     z-index: 2; /* El contenido está sobre la capa oscura */
     color: #fff;
     text-align: center;
-    background: rgba(0, 0, 0, 0.2); /* Fondo negro semitransparente detrás del texto */
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente detrás del texto */
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease; /* Transición suave */
@@ -268,7 +268,7 @@ nav ul li a {
     background-color: #f9f9f9;
     text-align: center;
     position: relative;
-    background-image: url('img/fondo.png');
+    background-image: url('img/fonds.jpg');
     background-size: cover;
     background-position: center;
     margin-top: 80px;
@@ -483,7 +483,7 @@ form button:hover {
     background-color: #edf8eb;
     text-align: center;
     position: relative;
-    background-image: url('img/fondo.png'); /* Imagen de fondo */
+    background-image: url('img/fondoo.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -544,7 +544,7 @@ form button:hover {
 
 /* Banner principal */
 #banner-sobre-nosotros {
-    background-image: url('img/fondo.png'); /* Imagen de fondo */
+    background-image: url('img/fondis.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     color: white;
@@ -639,9 +639,11 @@ form button:hover {
 }
 
 .sede img {
-    width: 100%;
-    height: auto;
+    width: 700px; 
+    height: 400px; 
+    object-fit: cover; 
     display: block;
+    border-radius: 10px; 
 }
 
 .sede-content {
@@ -804,6 +806,33 @@ iframe {
     line-height: 1.6;
 }
 
+/* Banner principal */
+#banner-mision {
+    background-image: url('img/fondd.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+}
+
+#banner-mision .banner-content {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente detrás del texto */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#banner-mision h1 {
+    font-size: 3.5rem;
+}
+
+#banner-mision p {
+    font-size: 1.5rem;
+}
+
 /* Estilos para la sección de Valores */
 #valores {
     padding: 50px 20px;
@@ -877,10 +906,12 @@ iframe {
 }
 
 .miembro img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%; 
+    object-fit: cover; 
 }
+
 
 .miembro h3 {
     margin-top: 15px;
