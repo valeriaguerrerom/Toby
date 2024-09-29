@@ -43,7 +43,66 @@ nav ul li a {
 nav ul li a:hover {
     color: #000000; /* Rojo oscuro al pasar el cursor */
 }
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-right: 20px; /* Espacio entre el logo y las pestañas de navegación */
+}
+/* Estilo básico para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
 
+nav ul li {
+    position: relative;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Estilo del menú desplegable */
+.dropdown-menu {
+    display: none; /* Por defecto, el menú no se muestra */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #72e27b;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+
+
+/* Mostrar el menú desplegable al hacer hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/* Estilo del logo */
+.logo-item img {
+    width: 150px;
+}
+
+/* Estilo del logo */
 .logo {
     width: 150px;
     height: auto;
