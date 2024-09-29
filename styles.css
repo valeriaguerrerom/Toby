@@ -74,6 +74,11 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.2); /* Fondo negro semitransparente detrás del texto */
     padding: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.banner-content:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de todo el banner */
 }
 
 .banner-content h1 {
@@ -84,6 +89,7 @@ nav ul li a:hover {
     font-size: 1.2rem;
     margin-top: 10px;
 }
+
 
 
 /* Carrusel */
@@ -98,7 +104,7 @@ nav ul li a:hover {
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .slide {
@@ -254,17 +260,17 @@ form button:hover {
 }
 
 
-/* Sección de productos destacados */
+/* Sección de servicios destacados */
 #productos-destacados {
     padding: 50px;
     text-align: center;
-    background-color: #77c178; /* Fondo negro */
+    background-color: #64d16d; 
 }
 
 #productos-destacados h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ffffff; /* Título dorado */
+    color: #ffffff; 
 }
 
 .productos-grid {
@@ -287,14 +293,15 @@ form button:hover {
 }
 
 .producto img {
-    width: 100%; /* Ajusta las imágenes al 100% del ancho */
+    width: 70%; /* Ajusta las imágenes al 100% del ancho */
     height: auto; /* Mantiene las proporciones */
     border-bottom: 1px solid #eee;
 }
 
 .producto p {
-    font-size: 1.1rem;
-    margin-top: 10px;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    padding: 10px;
     color: #000000; /* Texto blanco */
 }
 
