@@ -95,7 +95,7 @@ Toby´s Pet Care/
 ├── contact.html              # Contact Us page
 ├── gallery.html              # Interactive gallery showcasing services and pets
 ├── services.html             # Veterinary and grooming services details
-└── README.md               # Project README file
+└── README.md                 # Project README file
 ```
 
 ---

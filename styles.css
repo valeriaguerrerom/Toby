@@ -126,7 +126,7 @@ nav ul li a {
     align-items: center;
     padding: 20px;
     z-index: 1;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 .banner-content {
@@ -271,7 +271,7 @@ nav ul li a {
     background-image: url('img/fonds.jpg');
     background-size: cover;
     background-position: center;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 #contacto::before {
@@ -404,7 +404,7 @@ form button:hover {
     padding: 50px;
     background-color: #f8f9fa;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 #productos h2 {
@@ -488,7 +488,7 @@ form button:hover {
     background-position: center;
     color: #fff;
     min-height: 80vh;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 #contacto::before {
@@ -551,7 +551,7 @@ form button:hover {
     padding: 150px 0;
     text-align: center;
     position: relative;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 #banner-sobre-nosotros .banner-content {
@@ -626,7 +626,7 @@ form button:hover {
     justify-content: space-around;
     padding: 20px;
     background-color: #f9f9f9;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 .sede {
@@ -701,7 +701,7 @@ iframe {
 #galeria {
     padding: 20px;
     background-color: #f9f9f9;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 #galeria h2 {
@@ -779,7 +779,7 @@ iframe {
     justify-content: space-around;
     padding: 50px;
     background-color: #f8f9fa;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 #mision-vision div {
@@ -815,7 +815,7 @@ iframe {
     padding: 150px 0;
     text-align: center;
     position: relative;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 #banner-mision .banner-content {
