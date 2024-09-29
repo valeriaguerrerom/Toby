@@ -1,4 +1,4 @@
-/* Reseteo general y estructura básica */
+/* Estructura */
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +13,8 @@ body {
 
 /* Encabezado y navegación */
 header {
-    background-color: #64d16d; /* Fondo negro */
-    color: #ffffff; /* Texto dorado */
+    background-color: #64d16d; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #000000; /* Rojo oscuro al pasar el cursor */
+    color: #000000; /* Negro al pasar el cursor */
 }
 .logo {
     width: 150px;
@@ -52,7 +52,7 @@ nav ul li a:hover {
     display: block;
     margin-right: 20px; /* Espacio entre el logo y las pestañas de navegación */
 }
-/* Estilo básico para la barra de navegación */
+/* Estilo para la barra de navegación */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -89,9 +89,7 @@ nav ul li a {
     margin: 0;
 }
 
-
-
-/* Mostrar el menú desplegable al hacer hover */
+/* Mostrar el menú desplegable al pasar el cursor */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -103,9 +101,9 @@ nav ul li a {
 /* Estilo del logo */
 .logo-item img {
     width: 150px;
+    transition: transform 0.3s ease; /* Animación suave */
 }
 
-/* Estilo del logo */
 .logo {
     width: 150px;
     height: auto;
@@ -113,7 +111,11 @@ nav ul li a {
     margin-right: 20px; /* Espacio entre el logo y las pestañas de navegación */
 }
 
-/* Banner principal */
+/* Efecto hover para ampliar el logo */
+.logo-item img:hover {
+    transform: scale(1.2); /* Amplía el logo al 120% */
+}
+/* Banner principal index */
 #banner-principal {
     position: relative;
     width: 100%;
@@ -153,9 +155,7 @@ nav ul li a {
     margin-top: 10px;
 }
 
-
-
-/* Carrusel */
+/* Carrusel index*/
 .carousel {
     position: relative;
     width: 100%;
@@ -171,7 +171,7 @@ nav ul li a {
 }
 
 .slide {
-    flex: 0 0 100%; /* Cada diapositiva ocupa el 100% del ancho */
+    flex: 0 0 100%; /* Las diapositivas ocupan el 100% del ancho */
 }
 
 .slide img {
@@ -232,7 +232,7 @@ nav ul li a {
     background-color: #717171;
 }
 
-/* Sección de productos destacados */
+/* Sección de productos destacados index */
 #productos-destacados {
     padding: 50px;
     text-align: center;
@@ -366,7 +366,7 @@ form button:hover {
     font-size: 1.3rem;
     margin-top: 5px;
     padding: 10px;
-    color: #000000; /* Texto blanco */
+    color: #000000; /* Texto negro */
 }
 
 .product-info {
@@ -457,7 +457,7 @@ form button:hover {
 }
 
 .product-info button {
-    background-color: #64d16d; /* Verde vibrante */
+    background-color: #64d16d; /* Verde */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -477,6 +477,7 @@ form button:hover {
     outline: none;
     box-shadow: 0 0 0 3px rgba(100, 209, 109, 0.5); /* Sombra verde suave al hacer focus */
     }
+
 /* Sección de contacto */
 #contacto {
     padding: 50px;
@@ -540,9 +541,7 @@ form button:hover {
     background-color: #81e871;
 }
 
-
-
-/* Banner principal */
+/* Banner Sobre Nosotros */
 #banner-sobre-nosotros {
     background-image: url('img/fondis.jpg'); /* Imagen de fondo */
     background-size: cover;
@@ -569,7 +568,7 @@ form button:hover {
     font-size: 1.5rem;
 }
 
-/* Estilos para la sección 'Sobre Nosotros' */
+/* Estilos para la sección Sobre Nosotros */
 #sobre-nosotros {
     display: flex;
     flex-wrap: wrap;
@@ -619,7 +618,7 @@ form button:hover {
     }
 }
 
-/* Estilos generales para las sedes */
+/* Estilos para Sedes */
 .sede-container {
     display: flex;
     flex-wrap: wrap;
@@ -696,7 +695,6 @@ iframe {
     }
 }
 
-
 /* Sección de la galería */
 #galeria {
     padding: 20px;
@@ -710,7 +708,7 @@ iframe {
     font-size: 2rem;
 }
 
-/* Carrusel con altura reducida */
+/* Carrusel de galería */
 .carousel2 {
     position: relative;
     max-width: 1000px;
@@ -745,7 +743,7 @@ iframe {
     text-align: left;
 }
 
-/* Controles */
+/* Controles carrousel */
 .controls2 {
     text-align: center;
     margin-top: 10px;
@@ -806,7 +804,7 @@ iframe {
     line-height: 1.6;
 }
 
-/* Banner principal */
+/* Banner Mision y vision */
 #banner-mision {
     background-image: url('img/fondd.jpg'); /* Imagen de fondo */
     background-size: cover;
@@ -912,7 +910,6 @@ iframe {
     object-fit: cover; 
 }
 
-
 .miembro h3 {
     margin-top: 15px;
     font-size: 1.5rem;
@@ -922,6 +919,7 @@ iframe {
     font-size: 1.1rem;
     color: #666;
 }
+
 /* Footer */
 footer {
     background-color: #ffffff;
@@ -931,7 +929,5 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
-    z-index: 1;
-
-    
+    z-index: 1;   
 }
